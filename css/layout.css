@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --amarelo: #feee59;
+}
+body{
+    background-color: #ebebeb;
+    font-family: "Roboto","sans-serif";
+}
+a{
+    text-decoration: none;
+    color: #3583fa;
+    font-size: 14px;
+}
+
+header{
+    background-color: var(--amarelo);
+    height: 100px;
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* Logo */
+.logo{
+    width: 120px;
+    height: auto;
+}
+.logo-disney{
+    max-height: 39px;
+}
+.menu-header{
+    display: flex;
+    align-items: center;
+}
+.menu-header li{
+    list-style: none;
+    margin: 5px;
+}
+.menu-header li a{
+    text-decoration: none;
+    color: #5e5849;
+}
+/* Form Search */
+.input-search{
+    padding: 0rem 0.5rem;
+    width: 550px;
+    border: #fff;
+    box-sizing: border-box;
+}
+.input-search:focus {
+    border: #fff;
+}
+.input-search::placeholder{
+    color: silver;
+    font-size: 15px;
+}
+.item form{
+    display: flex;
+}
+.btn-search{
+    width: 42px;
+    height: 42px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    z-index: 920;
+}
+
+.item{
+    margin: 5px;
+}
+.pagamentos{
+    margin: 2rem;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    border-radius: 10px;
+}
+.pagamentos .pagamento-item{
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 5px;
+}
+.pagamento-item span{
+    margin: 5px;
+}
+.pagamento-item span h3{
+    font-weight: 400;
+}
+.pagamento-item span p{
+    color: #5e5849;
+}
